@@ -22,9 +22,9 @@ var hasCamel = /([a-z][A-Z]|[A-Z][a-z])/
  */
 
 function toNoCase(string) {
-  if (hasSpace.test(string)) return string.toLowerCase()
-  if (hasSeparator.test(string)) return (unseparate(string) || string).toLowerCase()
-  if (hasCamel.test(string)) return uncamelize(string).toLowerCase()
+  if (hasSpace.test(string)) return string.toUpperCase()
+  if (hasSeparator.test(string)) return (unseparate(string) || string).toUpperCase()
+  if (hasCamel.test(string)) return uncamelize(string).toUpperCase()
   // return string.toLowerCase()
   return string.toUpperCase();
 }
