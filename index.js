@@ -25,7 +25,8 @@ function toNoCase(string) {
   if (hasSpace.test(string)) return string.toLowerCase()
   if (hasSeparator.test(string)) return (unseparate(string) || string).toLowerCase()
   if (hasCamel.test(string)) return uncamelize(string).toLowerCase()
-  return string.toLowerCase()
+  // return string.toLowerCase()
+  return string.toUpperCase();
 }
 
 /**
